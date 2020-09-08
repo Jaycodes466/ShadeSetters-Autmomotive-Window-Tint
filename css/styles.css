@@ -1,4 +1,11 @@
 /* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dark-background {
+    background-color: #f6f9fe;
+}
 
 /* Navbar */
 
@@ -18,16 +25,28 @@
 }
 
 /* About */
-#about {
-    background-color: #f6f9fe;
-}
+
+
 
 
 /* Services */
+#services .fa {
+    color: #106eea;
+    font-size: 2rem;
+}
 
 /* Gallery */
 
+
+.carousel-item img {
+    height: 80%;
+}
+
 /* Testimonials */
+.card .fa {
+    color: #106eea;
+    font-size: 2rem;
+}
 
 
 /* FAQ */
@@ -64,7 +83,7 @@
 #contact .info-box {
     color: #444444;
     text-align: center;
-    box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.5);
     padding: 20px 0 30px 0;
   }
   
@@ -89,7 +108,6 @@
   }
 
   #contact form {
-    box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
     padding: 30px;
   }
   

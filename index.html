@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -33,6 +34,8 @@
           </nav>
     </header>
 
+    <main>
+
       <!--Jumbotron/Banner-->
   <section id="banner" class="jumbotron-fluid d-flex flex-column justify-content-center">
     <div class="container">
@@ -44,7 +47,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="dark-background">
     <div class="container py-5">
       <div class="title-container text-center">
         <h2 class="section-title about-title pb-5">About Shade Setters</h2>
@@ -52,10 +55,10 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <img src="images/Shae-tinting.jpg"  class="img-fluid" alt="Shae Ege tinting a car at Sema Show">
+          <img src="images/Shae-tinting.jpg"  class="img-fluid about-img" alt="Shae Ege tinting a car at Sema Show">
         </div>
         <div class="col-lg-6 ml-auto">
-          <h3>Shade Setters Automotive Window Tint</h3>
+          <h3>Shade Setters</h3>
           <p>We are an automotive window tint and paint protection film business based out of Centennial, Colorado. We are committed to providing customers with the highest quality products & expert installations.</p>
         </div>
       </div>
@@ -69,20 +72,20 @@
       <div class="title-container text-center">
         <h2 class="section-title services-title pb-5">Our Services</h2>
       </div>
-      <div class="row">
+      <div class="row text-center">
         <div class="col-lg-4">
-          <i class="fa fa-car" aria-hidden="true"></i>
-          <h3>Window Tint</h3>
+          <i class="fa fa-car pb-2" aria-hidden="true"></i>
+          <h3 class="pb-2">Window Tint</h3>
           <p>Improve your vehicles look, keep your vehicles interior dramatically cooler, and protect yourself from UV rays by having us install our window tint.</p>
         </div>
         <div class="col-lg-4">
-          <i class="fa fa-car" aria-hidden="true"></i>
-          <h3>Paint Protection</h3>
+          <i class="fa fa-car pb-2" aria-hidden="true"></i>
+          <h3 class="pb-2">Paint Protection</h3>
           <p>Protect your investment by preserving the quality of your vehicles paint with our paint protection film.</p>
         </div>
         <div class="col-lg-4">
-          <i class="fa fa-car" aria-hidden="true"></i>
-          <h3>Tint Removal</h3>
+          <i class="fa fa-car pb-2" aria-hidden="true"></i>
+          <h3 class="pb-2">Tint Removal</h3>
           <p>Ready for a fresh start? We can remove your vehicles old window tint or paint protection film.</p>
         </div>
       </div>
@@ -91,24 +94,91 @@
 
 
   <!-- Gallery Section -->
-  <section id="gallery">
+  <section id="gallery" class="dark-background">
  <div class="container py-5">
     <div class="title-container text-center">
       <h2 class="section-title gallery-title pb-5">Car Gallery</h2>
+      </div>
+      <div class="row">
+        <div class="col-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/Toyota-tacoma.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/Toyota-4runner.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/Acura.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
       </div>
     </div>
   </section>
 
 
   <!-- Testimonials Section -->
-  <div class="container py-5">
-    <div class="title-container text-center">
-      <h2 class="section-title testimonials-title"></h2>
+  <section id="testimonials">
+    <div class="container py-5">
+      <div class="title-container text-center">
+        <h2 class="section-title testimonials-title pb-5">Testimonials</h2>
+      </div>
+      <div class="row text-center"> 
+        <div class="col-lg-4">
+          <div class="card testimonial-card">
+            <i class="fa fa-quote-left pt-3" aria-hidden="true"></i>
+            <div class="card-body">
+              <p class="testimonial">Shae was incredibly professional from beginning to end and was straight forward about everything. I'd highly recommend him to anyone looking for a tint job.</p>
+              <p class="author font-weight-bold">- Taylor Hinds</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card testimonial-card">
+            <i class="fa fa-quote-left pt-3" aria-hidden="true"></i>
+            <div class="card-body">
+              <p class="testimonial">Shae went above and beyond my expectations and got it done in a timely manner, will only recommend from here on out. Finally found a legit tint guy!</p>
+              <p class="author font-weight-bold">- Derek Becker</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card testimonial-card">
+            <i class="fa fa-quote-left pt-3" aria-hidden="true"></i>
+            <div class="card-body">
+              <p class="testimonial">Shae is amazing he really does care about his work and always wants you to be happy! Shae will always tint my vehicles. And has done all the tinting on my truck and I am very pleased.
+              </p>
+              <p class="author font-weight-bold">- Preston Bosher</p>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
   <!-- FAQ Section -->
-  <section id="faq">
+  <section id="faq" class="dark-background">
       <div class="container py-5">
      <div class="title-container text-center">
             <h2 class="section-title faq-title pb-5">Frequently Asked Questions</h2>
@@ -226,7 +296,6 @@
   </section>
 
   <!-- Contact Section -->
-  <!-- ======= Contact Section ======= -->
   <section id="contact">
     <div class="container py-5">
       <div class="title-container text-center">
@@ -238,7 +307,7 @@
           <div class="info-box mb-4">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <h3>Our Address</h3>
-            <a href="https://goo.gl/maps/uvUTKTP9zpD2" target="_blank" rel="noopener">15373 East Hinsdale Circle #D, Centennial 80112</a>
+            <a href="https://goo.gl/maps/uvUTKTP9zpD2" target="_blank" rel="noopener">15373 E Hinsdale Cir, Centennial, CO 80112</a>
           </div>
         </div>
 
@@ -291,7 +360,16 @@
       </div>
 
     </div>
-  </section><!-- End Contact Section -->
+  </section>
+
+</main>
+  <footer class="footer dark-background">   
+  <div class="container py-4">
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Shade Setters LLC</span></strong>. All Rights Reserved
+    </div>
+  </footer>
+   
 
     
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
