@@ -48,9 +48,6 @@ body {
 
 
 
-.navbar-dark .navbar-toggler {
-  border: none;
-}
 
 
 
@@ -221,8 +218,16 @@ body {
    .navbar-default .navbar-toggle .icon-bar {
     background-color: #000 !important;
 }
+.custom-nav .navbar-toggler {
+  border: none;
+}
+
 
 #about p {
   width: 100%;
+}
+
+.about-content {
+  text-align: center;
 }
  }
