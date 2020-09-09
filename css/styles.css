@@ -9,8 +9,12 @@ body {
 
 /* Navbar */
 .navbar-brand {
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+  color: #106eea !important;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -21,6 +25,7 @@ body {
   width: 100%;
   position: fixed;
   transition: 0.3s ease-in-out;
+  z-index: 100;
 }
 
 
@@ -33,16 +38,14 @@ body {
   color: #000;
 }
 
+.nav-active .navbar-nav .nav-link:hover {
+  color: #106eea;
+}
+
 .nav-active .navbar-brand {
-  color: #000;
+  color: #000 !important;
 }
 
-
-
-.nav-active {
-  background-color:#fff;
-  box-shadow: 5px -1px 12px -5px grey;
-}
 
 
 .navbar-dark .navbar-toggler {
@@ -198,3 +201,28 @@ body {
 
 
  /* Media Queries */
+ @media only screen and (max-width: 400px) {
+   .custom-nav {
+     position: absolute;
+     background-color: #fff;
+     color: #000;
+   }
+
+   .navbar-brand {
+     color: #000 !important;
+   }
+   .navbar-nav .nav-link {
+     color: #000 !important;
+   }
+   .navbar-dark .navbar-toggler {
+     color: #000 !important;
+   }
+
+   .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000 !important;
+}
+
+#about p {
+  width: 100%;
+}
+ }
